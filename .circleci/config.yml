@@ -22,8 +22,8 @@ jobs:
       - run:
           name: Deploy to EB if branch is Master
           command: |
-            eb init --region us-east-1 --platform iis-10.0 circleci-beanstalk-example
-            eb create circleci-beanstalk-example-master
+            eb init --region us-east-1 --platform iis-10.0 circleci-beanstalk-example1
+            eb create circleci-beanstalk-example-master1
            # eb deploy -v --staged --profile kenani
            #  eb init --region us-east-1 --platform 64bit-amazon-linux-2-v2.0.1-running-.net-core circleci-beanstalk-example
       - run:
