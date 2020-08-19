@@ -26,10 +26,7 @@ jobs:
             eb create circleci-beanstalk-example-master1
            # eb deploy -v --staged --profile kenani
            #  eb init --region us-east-1 --platform 64bit-amazon-linux-2-v2.0.1-running-.net-core circleci-beanstalk-example
-      - run:
-          name: List
-          command: |
-            ll
+     
       
 workflows:
   version: 2
