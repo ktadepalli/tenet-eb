@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RecruitmentAPI</name>
+    </assembly>
+    <members>
+        <member name="M:RecruitmentAPI.Controllers.RegistrationController.RegisterCandidate(RecruitmentAPI.Models.RegistrationModel)">
+            <summary>
+            Controller For Registration
+            </summary>
+        </member>
+    </members>
+</doc>
