@@ -22,11 +22,9 @@ jobs:
       - run:
           name: Deploy to EB if branch is Master
           command: |
-            eb use circleci-beanstalk-example --profile kenani --region us-east-1
-            eb init --region us-east-1 --platform Docker circleci-beanstalk-example
-#--platform .Net Core on Linux
-
-            eb deploy -v --staged --profile kenani
+            eb init --region us-east-1 --platform 64bit-amazon-linux-2-v2.0.1-running-.net-core circleci-beanstalk-example
+            eb create circleci-beanstalk-example-master
+           # eb deploy -v --staged --profile kenani
       - run:
           name: List
           command: |
